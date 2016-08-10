@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+    <string name="main_tab_home">主页</string>
+    <string name="main_tab_store">开店</string>
+    <string name="main_tab_cart">购物车</string>
+    <string name="main_tab_user">用户</string>
+
+</resources>

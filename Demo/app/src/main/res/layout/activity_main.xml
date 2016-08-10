@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/edeef0"
+    >
+
+    <RadioGroup
+        android:id="@+id/rg_main_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb_main_tab_home"
+            style="@style/MainTabItem"
+            android:text="@string/main_tab_home"
+            android:drawableTop="@drawable/selector_main_tab_home"
+            android:checked="true"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_tab_store"
+            style="@style/MainTabItem"
+            android:drawableTop="@drawable/selector_main_tab_store"
+            android:text="@string/main_tab_store"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_tab_cart"
+            style="@style/MainTabItem"
+            android:drawableTop="@drawable/selector_main_tab_cart"
+            android:text="@string/main_tab_cart"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_main_tab_user"
+            style="@style/MainTabItem"
+            android:drawableTop="@drawable/selector_main_tab_user"
+            android:text="@string/main_tab_user"
+            />
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/rg_main_tab"
+        />
+    
+</RelativeLayout>
